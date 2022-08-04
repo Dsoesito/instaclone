@@ -1,3 +1,4 @@
+import { faker } from "@faker-js/faker";
 import {
   BookmarkIcon,
   ChatIcon,
@@ -9,7 +10,7 @@ import {
 
 import { HeartIcon as HeartIconFilled } from "@heroicons/react/solid";
 import { useSession } from "next-auth/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Moment from "react-moment";
 
 function FakePost({ id, username, userImg, img, caption }) {
@@ -18,6 +19,26 @@ function FakePost({ id, username, userImg, img, caption }) {
   const [comments, setComments] = useState([]);
   const [likes, setLikes] = useState([]);
   const [hasLiked, setHasLiked] = useState(false);
+
+  useEffect(() => {
+    const notRealComments = [];
+
+    function createRandomComment() {
+      return {
+        id: faker.datatype.uuid(),
+        username: faker.internet.userName(),
+        userImage: faker.image.avatar(),
+        comment: faker.random.words(),
+        timestamp: faker.date.recent(10),
+      };
+    }
+
+    Array.from({ length: 3 }).forEach(() => {
+      notRealComments.push(createRandomComment());
+    });
+
+    setComments(notRealComments);
+  }, []);
 
   return (
     <div className="bg-white my-7 border rounded-sm">
@@ -60,26 +81,28 @@ function FakePost({ id, username, userImg, img, caption }) {
           <p className="font-bold md-1">{likes.length} likes</p>
         )}
 
-        <span className="font-bold mr-1">{username} </span>
+        <span className="font-bold mr-1">{username}_fake_account </span>
         {caption}
       </p>
 
       {/* Comments */}
       {comments.length > 0 && (
-        <div className="ml-10 h-20 overflow-y-scroll scrollbar-thumb-black scrollbar-thin">
+        <div className="ml-10 h-20 overflow-y-scroll scrollbar-thumb-gray-500 scrollbar-thin">
           {comments.map((comment) => (
             <div key={comment.id} className="flex items-center space-x-2 mb-3">
               <img
                 className="h-7 rounded-full"
-                src={comment.data().userImage}
+                src={comment.userImage}
                 alt=""
               />
               <p className="text-sm flex-1">
-                <span className="font-bold">{comment.data().username}</span>{" "}
-                {comment.data().comment}
+                <span className="font-bold">
+                  {comment.username}_fake_account
+                </span>{" "}
+                {comment.comment}
               </p>
               <Moment fromNow className="pr-5 text-xs">
-                {comment.data().timestamp?.toDate()}
+                {comment.timestamp}
               </Moment>
             </div>
           ))}
