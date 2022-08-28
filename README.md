@@ -4,8 +4,6 @@ Hello! This is a clone of the popular social media website "Instagram" that I bu
 
 App Link: https://www.danielsoesito-instaclone.online
 
-Video Link: https://www.youtube.com/watch?v=a6Xs2Ir40OI&list=PLf16UKl7nR5AjcrYOe1niifJSAls3spDk&index=12
-
 ## Features
 
 * Home Page to view posts by others and from fake data taken from Faker.io
@@ -53,3 +51,5 @@ Fake Data colelcted from Faker.io API, used to mimic instagram posts
 If you would like to view the Instaclone app, feel free to follow the link at the top of this post, but please, PLEASE, PLEASE do not post anything inapporpirate!
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+Video Tutorial Link: https://www.youtube.com/watch?v=a6Xs2Ir40OI&list=PLf16UKl7nR5AjcrYOe1niifJSAls3spDk&index=12
