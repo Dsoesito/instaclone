@@ -28,12 +28,12 @@ Lastly, the login functionality is handled by NextAuth (which is hosted by Googl
 Instaclone Home Page, before login
 
 
-## Login Page
+### Login Page
 ![Screen Shot 2022-08-15 at 8 36 32 PM](https://user-images.githubusercontent.com/99083937/184759182-f1b87cd8-2dc5-44f8-9d47-294740eaa58f.png)
 Instaclone Login Page, after clicking "Sign In"
 
 
-## Home Page after login
+### Home Page after login
 ![Screen Shot 2022-08-15 at 8 38 50 PM](https://user-images.githubusercontent.com/99083937/184759353-1e6d6c8e-cf52-4b6c-89f3-8e1701ba992a.png)
 Instaclone Home Page, after login, users can now interact with posts (like, comment, etc.)
 
@@ -43,11 +43,11 @@ Instaclone Home Page, after login, users can now interact with posts (like, comm
 Instaclone Upload Modal, where logged in users can upload their own images 
 
 
-## **EXTRA** Fake Data
+### **EXTRA** Fake Data
 ![Screen Shot 2022-08-15 at 8 43 11 PM](https://user-images.githubusercontent.com/99083937/184759662-8d1d6dff-7cf2-407c-9383-23d216f89b6f.png)
 Fake Data colelcted from Faker.io API, used to mimic instagram posts
 
-## Thank you 
+### Thank you 
 
 If you would like to view the Instaclone app, feel free to follow the link at the top of this post, but please, PLEASE, PLEASE do not post anything inapporpirate!
 
