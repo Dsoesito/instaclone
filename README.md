@@ -3,6 +3,7 @@
 Hello! This is a clone of the popular social media website "Instagram" that I built while following a tutorial by Sonny Sangha 😁
 
 App Link: https://www.danielsoesito-instaclone.online
+** Feel free to view this app on your phone! It is mobile friendly**
 
 ## Features
 
